@@ -15,3 +15,9 @@ function logRequest(req, res, next) {
  }
  
  module.exports = { logRequest, blockSpecialBrand };
+
+ function customeErrorHandler(err, request, response, next) {
+
+    // Error handling middleware functionality here
+  
+  }
