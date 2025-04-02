@@ -10,6 +10,7 @@ const { errorResponder } = require('./error.middleware');
 const app = express();
 const PORT = 3000;
 
+app.use(express.json());
 app.use(productRouter);
 app.use(bodyParser.json());
 app.use(logRequest);
